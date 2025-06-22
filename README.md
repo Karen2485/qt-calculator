@@ -19,6 +19,13 @@ A simple yet feature-rich calculator built with **Qt 6** and **C++** using the Q
 - 🪟 Custom window title and application icon
 
 ---
+## 📸 Screenshots
+
+### Light Theme
+![Light Theme](screenshot_light.png)
+
+### Dark Theme
+![Dark Theme](screenshot_dark.png)
 
 ## 🛠️ Technologies Used
 
