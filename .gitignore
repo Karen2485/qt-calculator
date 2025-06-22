@@ -1,0 +1,31 @@
+# Ignore build directories
+build*/
+*.pro.user*
+*.qmake.stash
+*.autosave
+*.moc
+*.obj
+*.o
+*.exe
+*.dll
+*.so
+*.a
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Qt Creator project settings
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+
+# Directories for build artifacts
+/build/
+/debug/
+/release/
+
+# CMake and QMake generated files
+CMakeLists.txt.user
+*.pri.user
