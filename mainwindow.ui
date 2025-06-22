@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -14,14 +17,44 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="Display">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roman</family>
+        <pointsize>28</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QWidget" name="widget" native="true">
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="1" column="2">
         <widget class="QPushButton" name="btn6">
          <property name="text">
           <string>6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn8">
+         <property name="text">
+          <string>8</string>
          </property>
         </widget>
        </item>
@@ -32,10 +65,31 @@
          </property>
         </widget>
        </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="btnClear">
+         <property name="text">
+          <string>С</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="0">
         <widget class="QPushButton" name="btn7">
          <property name="text">
           <string>7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btn5">
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btn2">
+         <property name="text">
+          <string>2</string>
          </property>
         </widget>
        </item>
@@ -102,44 +156,16 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="btn5">
-         <property name="text">
-          <string>5</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="btn2">
-         <property name="text">
-          <string>2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QPushButton" name="btnClear">
-         <property name="text">
-          <string>С</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QPushButton" name="btn8">
-         <property name="text">
-          <string>8</string>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QLineEdit" name="Display">
-      <property name="alignment">
-       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-      </property>
-      <property name="readOnly">
+    <item alignment="Qt::AlignmentFlag::AlignLeft">
+     <widget class="QPushButton" name="pushButton_theme">
+      <property name="enabled">
        <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Theme</string>
       </property>
      </widget>
     </item>
